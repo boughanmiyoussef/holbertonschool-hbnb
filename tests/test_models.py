@@ -13,6 +13,16 @@ class TestModels(unittest.TestCase):
         self.assertEqual(user.email, "abc@email.com")
         self.assertEqual(user.password, "password")
 
+    def test_place(self):
+        user = User(email="host@email.com", password="qwerty")
+        place = Place(name="New Place", host=user, description="Good")
+        review = Review(user=user, place=place, rating=5, comment="")
+        place.reviews.append(review)
+        self.assertEqual(len(place.reviews), 1)
+        self.assertEqual(place.reviews[0], review)
+
+
+
 
 if __name__ == '__main__':
     unittest.main()
