@@ -30,6 +30,11 @@ class TestModels(unittest.TestCase):
         self.assertEqual(place.reviews[0], review)
 
 
+    def test_city_country(self):
+        country = Country(name="France")
+        city = City(name="Paris", country=country)
+        self.assertEqual(city.name, "Paris")
+        self.assertEqual(city.country, country)
 
 
 if __name__ == '__main__':
