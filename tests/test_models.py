@@ -21,6 +21,14 @@ class TestModels(unittest.TestCase):
         self.assertEqual(len(place.reviews), 1)
         self.assertEqual(place.reviews[0], review)
 
+    def test_review(self):
+        user = User(email="reviewer@example.com", password="asdfg")
+        place = Place(name="The Best Place", host=user, description="Great")
+        review = Review(user=user, place=place, rating=5, comment="Amazing!")
+        place.reviews.append(review)
+        self.assertEqual(len(place.reviews), 1)
+        self.assertEqual(place.reviews[0], review)
+
 
 
 
