@@ -1,0 +1,71 @@
+{
+    "users": {
+        "af3a968e-e255-4f72-9f6e-2bd66c095b4e": {
+            "email": "Youssef@email.com",
+            "first_name": "Youssef",
+            "last_name": "Boughanmi",
+            "id": "af3a968e-e255-4f72-9f6e-2bd66c095b4e",
+            "created_at": "2024-06-23T14:40:01.050304",
+            "updated_at": "2024-06-23T14:40:01.050304"
+        },
+        "b39a4aea-6416-4cf1-914e-55aa3ff15eb6": {
+            "email": "Boughanmi@email.com",
+            "first_name": "Boughanmi",
+            "last_name": "Boughanmi",
+            "id": "b39a4aea-6416-4cf1-914e-55aa3ff15eb6",
+            "created_at": "2024-06-23T22:27:38.433396",
+            "updated_at": "2024-06-23T22:27:38.433396"
+        }
+    },
+    "countries": {
+        "66f30547-f46a-4d7c-8bb7-99a41cba16e3": {
+            "name": "Tunisia",
+            "code": "TN",
+            "id": "66f30547-f46a-4d7c-8bb7-99a41cba16e3"
+        }
+    },
+    "cities": {
+        "e341247e-e19c-4d84-bd58-402290d69ebc": {
+            "name": "France",
+            "country_code": "FR",
+            "id": "e341247e-e19c-4d84-bd58-402290d69ebc"
+        }
+    },
+    "amenities": {
+        "345bcd18-b031-4448-bfb8-2f6d0527c453": {
+            "name": "Sauna",
+            "id": "345bcd18-b031-4448-bfb8-2f6d0527c453",
+            "updated_at": "2024-06-23T14:38:43.311806"
+        }
+    },
+    "places": {
+        "dd14e539-d5f9-443b-8acb-32c3406273bf": {
+            "name": "Burj Khalida",
+            "description": "Skyscraper.",
+            "address": "Updated Address,TN",
+            "city_id": "e341247e-e19c-4d84-bd58-402290d69ebc",
+            "latitude": 2000,
+            "longitude": 60,
+            "host_id": "af3a968e-e255-4f72-9f6e-2bd66c095b4e",
+            "number_of_rooms": 70,
+            "number_of_bathrooms": 80,
+            "price_per_night": 2000,
+            "max_guests": 300,
+            "amenity_ids": [
+                "345bcd18-b031-4448-bfb8-2f6d0527c453"
+            ],
+            "id": "dd14e539-d5f9-443b-8acb-32c3406273bf",
+            "updated_at": "2024-06-23T14:47:19.192811"
+        }
+    },
+    "reviews": {
+        "b6d5593e-5466-4ba5-9f67-a168c5d916bf": {
+            "place_id": "dd14e539-d5f9-443b-8acb-32c3406273bf",
+            "user_id": "af3a968e-e255-4f72-9f6e-2bd66c095b4e",
+            "rating": 4,
+            "comment": "Great!",
+            "id": "b6d5593e-5466-4ba5-9f67-a168c5d916bf",
+            "updated_at": "2024-06-23T15:00:13.721523"
+        }
+    }
+}
