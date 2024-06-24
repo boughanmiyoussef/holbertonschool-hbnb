@@ -1,9 +1,12 @@
 import uuid
 from datetime import datetime
+from .base import BaseModel
 
-class Place:
+
+class Place(BaseModel):
     def __init__(self, name, host, description="", address="", city=None, latitude=0.0, longitude=0.0, 
                  number_of_rooms=0, bathrooms=0, price_per_night=0.0, max_guests=0, amenities=None, reviews=None):
+        super().__init__()
         self.id = str(uuid.uuid4())
         self.created_at = datetime.now()
         self.updated_at = datetime.now()

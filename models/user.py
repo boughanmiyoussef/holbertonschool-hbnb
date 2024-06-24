@@ -1,11 +1,13 @@
 #!/user/bin/python3
 
 import uuid
+from .base import BaseModel
 
-class User:
+class User(BaseModel):
     emails_in_database = set()
 
     def __init__(self, email, password):
+        super().__init__()
         if email in User.emails_in_database:
             raise ValueError ("Email Taken")
         User.emails_in_database.add(email)
